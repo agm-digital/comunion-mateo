@@ -1,0 +1,214 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #e8e1c9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+/* Tarjeta */
+.card {
+    background-color: #f5f2ea;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+
+    width: 90%;
+    max-width: 350px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset básico */
+p {
+    margin: 5px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Icono cruz */
+.icono {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+/* Textos */
+.small {
+    color: #9c8f6b;
+    font-size: 14px;
+}
+
+.titulo {
+    font-family: "Dancing Script", cursive;
+    color: #5c5c5c;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.nombre {
+    font-family: "Pacifico", cursive;
+    font-size: 28px;
+    color: #b59b5a;
+    margin: 15px 0;
+}
+
+.fecha {
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    color: #5c5c5c;
+}
+
+.label {
+    font-weight: bold;
+    color: #b59b5a;
+    margin-bottom: 8px;
+}
+
+.color1 {
+    color: #5c5c5c;
+}
+
+.hora {
+    color: #b59b5a;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Bloques */
+.bloque {
+    margin-bottom: 15px;
+}
+
+/* Separador */
+.separador {
+    position: relative;
+    margin: 25px 0;
+}
+
+.separador::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #5c5c5c,
+        transparent
+    );
+}
+
+.separador::after {
+    content: "✦";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5f2ea;
+    padding: 0 8px;
+    color: #5c5c5c;
+    font-size: 14px;
+}
+
+/* Link mapa */
+.mapa-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-top: 10px;
+
+    text-decoration: none;
+    color: #5c5c5c;
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.icono-mapa {
+    width: 18px;
+    transition: transform 0.3s ease;
+}
+
+.mapa-link:hover {
+    color: #b59b5a;
+}
+
+.mapa-link:hover .icono-mapa {
+    transform: scale(1.2);
+}
+
+/* Botón */
+
+.btn-confirmar {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background: linear-gradient(135deg, #b59b5a, #d4c08a);
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.btn-confirmar:hover {
+    background: linear-gradient(135deg, #8c7a4a, #b59b5a);
+    transform: translateY(-2px);
+}
+
+.btn-confirmar:active {
+    transform: scale(0.97);
+}
+
+.btn-confirmar:hover {
+    background: linear-gradient(135deg, #8c7a4a, #b59b5a);
+    transform: translateY(-2px);
+}
+
+.btn-confirmar:active {
+    transform: scale(0.97);
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+
+    .nombre {
+        font-size: 24px;
+    }
+
+    .fecha {
+        font-size: 20px;
+    }
+
+}
+
